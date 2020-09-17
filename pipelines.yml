@@ -31,7 +31,7 @@ pipelines:
           # outputResources:
           #   - name: outgoing
           inputResources:
-            - name: S_PS_UTIL
+            - name: S_PS_UTIL_0072
         execution:
           onExecute:
             - restore_run_files my_state output.dat
