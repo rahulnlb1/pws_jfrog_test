@@ -30,7 +30,7 @@ pipelines:
           nodePool: win_2019
           # outputResources:
           #   - name: outgoing
-          inputResources:
+          inputSteps:
             - name: S_PS_UTIL_0072
         execution:
           onExecute:
