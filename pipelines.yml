@@ -21,7 +21,7 @@ pipelines:
             - name: S_PS_UTIL_0072
         execution:
           onExecute:
-            - $out = new-object byte[] 204857600; (new-object Random).NextBytes($out); [IO.File]::WriteAllBytes('output.dat', $out)
+            - fsutil file createnew output.dat 52428800
             - add_run_files output.dat my_state
             
       - name: S_PS_UTIL_0072_2
