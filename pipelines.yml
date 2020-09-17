@@ -1,6 +1,6 @@
 
 resources:
-  - name: S_PS_UTIL
+  - name: S_PS_UTIL_0072
     type: GitRepo
     configuration:
       gitProvider: RahuljGithub
@@ -18,7 +18,7 @@ pipelines:
           # outputResources:
           #   - name: outgoing
           inputResources:
-            - name: S_PS_UTIL
+            - name: S_PS_UTIL_0072
         execution:
           onExecute:
             - dd if=/dev/zero of=output.dat  bs=2M  count=1
